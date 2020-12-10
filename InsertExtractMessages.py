@@ -42,7 +42,7 @@ def insert():
     print("")
     
     #Get the filename from the the user.
-    filename = raw_input("Filename? ")
+    filename = input("Filename? ")
     
     #If the filename is a correct file then proceed else get a new filename.
     OpenOk = False
@@ -52,10 +52,10 @@ def insert():
             OpenOk = True
         except IOError :
             print("File will not open")
-            filename = raw_input("Filename? ")
+            filename = input("Filename? ")
     
     #ask the user for the message they want to encode.
-    message=raw_input("Message? ")
+    message=input("Message? ")
     messagelst = list(message)
     messagelen=len(messagelst)
     
@@ -315,7 +315,7 @@ def extract():
     print("")
     
     #get a filename
-    filename = raw_input("Filename? ")
+    filename = input("Filename? ")
     
     #try to open the file, if it wont open get another file name
     OpenOk = False
@@ -325,7 +325,7 @@ def extract():
             OpenOk = True
         except IOError :
             print("File will not open")
-            filename = raw_input("Filename? ")
+            filename = input("Filename? ")
     
     #save the data from the file
     datastr = infile.read() 
@@ -429,12 +429,12 @@ def extract():
 def main():
     print("Steganography Assistant")
     #ask the user if they want to insert or extract.
-    insertorextract=raw_input("Do you want to insert a message or extract one (I/E)? ")
+    insertorextract=input("Do you want to insert a message or extract one (I/E)? ")
     
-    #if they dont enter an i,I,e, or E then get a new raw_input.
+    #if they dont enter an i,I,e, or E then get a new input.
     while insertorextract != "i" and insertorextract != "I" and insertorextract != "e" and insertorextract != "E":
         print("Please enter an I or an E")
-        insertorextract = raw_input("Do you want to insert a message or extract one (I/E)?")
+        insertorextract = input("Do you want to insert a message or extract one (I/E)?")
     
     #if they enter an i or I then insert else extract        
     if insertorextract == "i" or insertorextract == "I":
