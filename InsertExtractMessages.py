@@ -351,7 +351,7 @@ def extract():
     k=0
     b=""
     
-    #recieve the length of the message
+    
     for t in range(0,9,3):
         
         number=x[t]
