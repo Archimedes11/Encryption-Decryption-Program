@@ -26,7 +26,7 @@ def getdigits(number):
     #return the hundreds tens and ones digits of the number given.
     return (first,second,third,stringed)
 
-
+#please hire me
 
 
 
