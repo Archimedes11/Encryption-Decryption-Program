@@ -1,6 +1,6 @@
 
 
-  #Purpose: To turn a character into a number and then find the hundreds, tens, and ones plase.
+  #Purpose: To turn a character into a number and then find the hundreds, tens, and ones place.
   #Pre-conditions: getdigits function receives either a number or a string of a number.
   #Post-conditions:To return four values: The hundreds, tens, and ones place of the number and then the number sting. 
 
@@ -32,7 +32,7 @@ def getdigits(number):
 
 
 #Purpose: To insert a secret message into a .ppm file
-#Pre-conditions: User enters an i or I when asked if they want to insert or extract.s
+#Pre-conditions: User enters an i or an I when asked if they want to insert or extract.
 #Post-conditions:The program will encode a secret message from the user into a .ppm file.
 def insert():
     
@@ -194,7 +194,7 @@ def insert():
             
             if p==0:
                 number=messagelst[i]
-                firstm,secondm,thirdn,stringed=getdigits(number)
+                firstm,secondm,thirdm,stringed=getdigits(number)
             
                 number=x[t]
                 first,second,third,stringed=getdigits(number)
@@ -283,7 +283,7 @@ def insert():
     for i in range(15,len(x),15):
         x.insert(i,'\n')
     
-    #strip the whitespacefrom part of the header so that the picture will display
+    #strip the whitespace from part of the header so that the picture will display
     headertwo=str((datalst[3]).lstrip())
     
     #get the header to look nice and then save all of the file to the variable zz  
@@ -412,20 +412,14 @@ def extract():
     
     #display to the user
     print("")
-    print("The length of the message is " + messagelenstr)
-    print("The message is " + message)
+    print("The length of the message is " + messagelenstr +" characters long.")
+    print("The message is: " + message)
     print("")
-    
-        
-    
-    
-    
-
 
 
 #Purpose: To either insert a coded message into a file or decode a message from a file.
 #Pre-conditions: User enters whether they want to insert or extract a message
-#Post-conditions:The message is either inserted or extracted from the file.
+#Post-conditions:The message is either inserted to or extracted from the file.
 def main():
     print("Steganography Assistant")
     #ask the user if they want to insert or extract.
