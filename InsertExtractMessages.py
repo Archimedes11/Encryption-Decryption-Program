@@ -1,5 +1,3 @@
-
-
   #Purpose: To turn a character into a number and then find the hundreds, tens, and ones place.
   #Pre-conditions: getdigits function receives either a number or a string of a number.
   #Post-conditions:To return four values: The hundreds, tens, and ones place of the number and then the number sting. 
