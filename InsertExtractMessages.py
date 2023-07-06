@@ -27,10 +27,6 @@ def getdigits(number):
     return (first,second,third,stringed)
 
 
-
-
-
-
 #Purpose: To insert a secret message into a .ppm file
 #Pre-conditions: User enters an i or an I when asked if they want to insert or extract.
 #Post-conditions:The program will encode a secret message from the user into a .ppm file.
